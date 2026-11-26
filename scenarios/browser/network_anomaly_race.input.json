@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "name": "network-anomaly-race",
+  "room": "sim-anomaly-01",
+  "ticks": 50,
+  "events": [
+    { "tick": 0, "op": "join", "player": "alice", "name": "Alice" },
+    { "tick": 0, "op": "join", "player": "bob", "name": "Bob" },
+    { "tick": 2, "op": "input", "player": "alice", "seq": 1, "dx": 0, "dy": 1, "cloak": false },
+    { "tick": 5, "op": "input", "player": "bob", "seq": 1, "dx": 1, "dy": 0, "cloak": false },
+    { "tick": 8, "op": "input", "player": "alice", "seq": 5, "dx": 1, "dy": 0, "cloak": false },
+    { "tick": 10, "op": "input", "player": "alice", "seq": 3, "dx": -1, "dy": 0, "cloak": false },
+    { "tick": 12, "op": "input", "player": "alice", "seq": 5, "dx": 1, "dy": 0, "cloak": false },
+    { "tick": 16, "op": "input", "player": "alice", "seq": 6, "dx": 0, "dy": 0, "cloak": true },
+    { "tick": 42, "op": "leave", "player": "bob" }
+  ]
+}

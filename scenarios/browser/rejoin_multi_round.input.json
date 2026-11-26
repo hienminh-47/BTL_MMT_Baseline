@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "name": "rejoin-multi-round-finish",
+  "room": "sim-rejoin-lab",
+  "ticks": 45,
+  "events": [
+    { "tick": 0, "op": "join", "player": "alice", "name": "Alice" },
+    { "tick": 0, "op": "join", "player": "bob", "name": "Bob" },
+    { "tick": 4, "op": "input", "player": "alice", "seq": 1, "dx": 1, "dy": 0, "cloak": false },
+    { "tick": 10, "op": "leave", "player": "bob" },
+    { "tick": 15, "op": "rejoin", "player": "alice" },
+    { "tick": 20, "op": "join", "player": "charlie", "name": "Charlie" },
+    { "tick": 25, "op": "input", "player": "alice", "seq": 1, "dx": 0, "dy": 1, "cloak": false },
+    { "tick": 26, "op": "input", "player": "charlie", "seq": 1, "dx": -1, "dy": 0, "cloak": false },
+    { "tick": 30, "op": "input", "player": "alice", "seq": 2, "dx": 0, "dy": 0, "cloak": false },
+    { "tick": 35, "op": "leave", "player": "charlie" }
+  ]
+}

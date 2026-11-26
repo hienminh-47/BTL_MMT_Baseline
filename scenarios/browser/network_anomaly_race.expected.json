@@ -1,0 +1,16 @@
+{
+  "format": "tag-lagged-expected-v1",
+  "scenario": "network-anomaly-race",
+  "scenario_sha256": "4bc877ed1429a3754ccddfe9c856ed97b8b7185e6787d100d44ce480cd3844a4",
+  "expected": {
+    "phase": "finished",
+    "round": 1,
+    "winner": "alice",
+    "players": {
+      "alice": {
+        "alive": true,
+        "credits": 0
+      }
+    }
+  }
+}
